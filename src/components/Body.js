@@ -13,7 +13,7 @@ const Body = () => {
 
          {
            resObj
-            .filter((restro) => restro.card.avgRating > 4.5 ) // Only high-rated restaurants
+            .filter((restro) => restro.card.avgRating >= 4.4 ) // Only high-rated restaurants
             .map((restro) => <RestaurantCard key={restro.card.id} resData={restro} />)
 }
         
