@@ -2951,55 +2951,370 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const Title = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Title"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 6,
-        columnNumber: 15
-    }, undefined);
-};
-_c = Title;
-const Heading = ()=>{
+var _appLogoJpg = require("./Assets/App-logo.jpg");
+var _appLogoJpgDefault = parcelHelpers.interopDefault(_appLogoJpg);
+/*
+
+Header
+-logo
+-nav
+
+body
+-search bar
+-cards container
+-card
+-img,rating,cusine,del-time,name
+
+footer
+-copyright
+-links
+
+*/ const resObj = [
+    {
+        card: {
+            id: "568239",
+            name: "Dindigul Thalappakatti",
+            cloudinaryImageId: "o90ntbdynv1tbkojsjl3",
+            locality: "Panampilly Nagar",
+            areaName: "Panampilly Nagar",
+            costForTwo: "\u20B9500 for two",
+            cuisines: [
+                "Biryani",
+                "Barbecue",
+                "South Indian",
+                "Chinese",
+                "North Indian"
+            ],
+            avgRating: 4.6,
+            parentId: "332",
+            avgRatingString: "4.6",
+            totalRatingsString: "7.0K+",
+            promoted: true,
+            adTrackingId: "cid=26289606~p=0~adgrpid=26289606#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=568239~eid=e0c4a953-dc05-4dc5-835c-a4e800474081~srvts=1742192638317~collid=83639"
+        }
+    },
+    {
+        "card": {
+            "id": "64240",
+            "name": "Salkara Grills",
+            "cloudinaryImageId": "b8uhm56vpqbxcxa4i5re",
+            "locality": "Sheethal Building",
+            "areaName": "Thopumpady",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "Kerala",
+                "Biryani"
+            ],
+            "avgRating": 4.3,
+            "parentId": "20859",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "5.6K+"
+        }
+    },
+    {
+        "card": {
+            "id": "65285",
+            "name": "Aha! Biryani",
+            "cloudinaryImageId": "6b719d66cf49cebaabc1ee7297b13146",
+            "locality": "Mg Road",
+            "areaName": "Vyttila",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Biryani"
+            ],
+            "avgRating": 4.5,
+            "parentId": "6086",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "3.9K+",
+            "promoted": true,
+            "adTrackingId": "cid=26480971~p=1~adgrpid=26480971#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=65285~eid=8b713d7b-b214-4425-97ed-bac4b039c5eb~srvts=1742192638317~collid=83639"
+        }
+    },
+    {
+        "card": {
+            "id": "117145",
+            "name": "Hotel Salwa",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/1/6/d38f2154-fa3a-4241-829b-9d1c0d858f42_c462d6c8-25bc-46ec-babb-e9c33c6502d7.jpg",
+            "locality": "Aroor - Thoppumpady Road",
+            "areaName": "Fort Kochi",
+            "costForTwo": "\u20B9200 for two",
+            "cuisines": [
+                "South Indian",
+                "Biryani",
+                "Kerala"
+            ],
+            "avgRating": 4.4,
+            "parentId": "20578",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "2.5K+"
+        }
+    },
+    {
+        "card": {
+            "id": "498923",
+            "name": "Aasife Biryani",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/12/5/d5306649-159b-4301-96ae-2903227f43ad_25200138-cf62-460a-a9d8-1185c9405f5e.jpg",
+            "locality": "Ernakulam",
+            "areaName": "Vyttila",
+            "costForTwo": "\u20B9600 for two",
+            "cuisines": [
+                "Biryani",
+                "Chinese"
+            ],
+            "avgRating": 4.4,
+            "parentId": "26232",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "2.0K+",
+            "promoted": true,
+            "adTrackingId": "cid=25836237~p=3~adgrpid=25836237#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=498923~eid=29eb726f-7eeb-46f0-9ac0-acb25cb371c7~srvts=1742192638317~collid=83639"
+        }
+    },
+    {
+        "card": {
+            "id": "72175",
+            "name": "Al Saad Family Restaurant",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/8/16/2fd76bfe-9f6b-49df-8525-9e453cf96b06_ce548b6d-caad-410f-a38d-08eedbc751ca.jpg_compressed",
+            "locality": "FORTKOCHI",
+            "areaName": "Fort Kochi",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "South Indian",
+                "Chinese",
+                "Kerala"
+            ],
+            "avgRating": 4.3,
+            "parentId": "20846",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "2.1K+"
+        }
+    },
+    {
+        "card": {
+            "id": "490378",
+            "name": "Rahumaniya Biriyani",
+            "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/8/12/b32eacfd-9c5d-4760-9306-7636ee888917_2e5f8205-724b-495f-b211-427955f1f6bf.jpg_compressed",
+            "locality": "Marine Drive",
+            "areaName": "Marine Drive",
+            "costForTwo": "\u20B9300 for two",
+            "cuisines": [
+                "Kerala",
+                "Biryani",
+                "Chinese"
+            ],
+            "avgRating": 4.6,
+            "parentId": "164754",
+            "avgRatingString": "4.6",
+            "totalRatingsString": "2.8K+",
+            "promoted": true,
+            "adTrackingId": "cid=25836602~p=2~adgrpid=25836602#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=490378~eid=56ec95ae-e160-4912-bc5b-050d02f0b03e~srvts=1742192638317~collid=83639"
+        }
+    }
+];
+const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 15,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "From functional component"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "logo-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: (0, _appLogoJpgDefault.default)
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 161,
+                    columnNumber: 13
+                }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 16,
-                columnNumber: 4
+                lineNumber: 160,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home |"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 166,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About us |"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 167,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact us |"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 168,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 169,
+                            columnNumber: 17
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "App.js",
+                    lineNumber: 165,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 164,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 14,
-        columnNumber: 5
+        lineNumber: 159,
+        columnNumber: 9
     }, undefined);
 };
-_c1 = Heading;
+_c = Header;
+const RestaurantCard = ({ resData })=>{
+    const { name, cuisines, avgRating, cloudinaryImageId } = resData.card;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                alt: "briyani",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 180,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 182,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines[0]
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 183,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: avgRating
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 184,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: "40 mins"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 185,
+                columnNumber: 11
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 179,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = RestaurantCard;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-bar",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 193,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: [
+                    resObj.map((restro)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                            resData: restro
+                        }, restro.card.id, false, {
+                            fileName: "App.js",
+                            lineNumber: 198,
+                            columnNumber: 38
+                        }, undefined)),
+                    resObj.filter((restro)=>restro.card.avgRating > 4.5) // Only high-rated restaurants
+                    .map((restro)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                            resData: restro
+                        }, restro.card.id, false, {
+                            fileName: "App.js",
+                            lineNumber: 204,
+                            columnNumber: 30
+                        }, undefined))
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 196,
+                columnNumber: 11
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 192,
+        columnNumber: 9
+    }, undefined);
+};
+_c2 = Body;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 215,
+                columnNumber: 12
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 216,
+                columnNumber: 12
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 214,
+        columnNumber: 9
+    }, undefined);
+};
+_c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById('root'));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 26,
-    columnNumber: 17
+    lineNumber: 223,
+    columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "Heading");
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "RestaurantCard");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "AppLayout");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"21dqq":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","./Assets/App-logo.jpg":"7634o"}],"21dqq":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("a569817e6ea559f6");
 
@@ -18769,6 +19084,44 @@ module.exports = require("ee51401569654d91");
     };
 })();
 
-},{"58362d9d82be395f":"21dqq"}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
+},{"58362d9d82be395f":"21dqq"}],"7634o":[function(require,module,exports,__globalThis) {
+module.exports = require("5f8b79b6e9f95cb4").getBundleURL('lly8x') + "App-logo.22831759.jpg" + "?" + Date.now();
+
+},{"5f8b79b6e9f95cb4":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}]},["aQL8O","4qlNF","2Ew96"], "2Ew96", "parcelRequire94c2")
 
 //# sourceMappingURL=index.7826abd7.js.map
