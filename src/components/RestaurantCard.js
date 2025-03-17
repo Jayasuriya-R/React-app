@@ -1,4 +1,4 @@
- import { CDN_URL } from "../Utilities/constants";
+ import CDN_URL  from "../Utilities/constants";
  import Body from "./Body";
  const RestaurantCard = ({resData}) =>{
     const { name, cuisines, avgRating,cloudinaryImageId} = resData.card;

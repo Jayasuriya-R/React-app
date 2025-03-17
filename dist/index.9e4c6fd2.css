@@ -54,4 +54,9 @@
   border: 1px solid #add8e6;
   border-radius: 10px;
 }
+
+.filter-btn {
+  cursor: pointer;
+  margin: 10px;
+}
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

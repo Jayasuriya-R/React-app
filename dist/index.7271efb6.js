@@ -19054,8 +19054,19 @@ const Body = ()=>{
         className: "body",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "search-bar",
-                children: "Search"
+                className: "filter",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "filter-btn",
+                    onClick: ()=>{
+                        resObj = (0, _mockdata.resObj).filter((res)=>res.card.avgRating > 4);
+                        console.log((0, _mockdata.resObj));
+                    },
+                    children: "Top rated restaurant"
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 7,
+                    columnNumber: 12
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
                 lineNumber: 6,
@@ -19068,21 +19079,21 @@ const Body = ()=>{
                             resData: restro
                         }, restro.card.id, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 11,
+                            lineNumber: 13,
                             columnNumber: 38
                         }, undefined)),
-                    (0, _mockdata.resObj).filter((restro)=>restro.card.avgRating > 4.5) // Only high-rated restaurants
+                    (0, _mockdata.resObj).filter((restro)=>restro.card.avgRating >= 4.4) // Only high-rated restaurants
                     .map((restro)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             resData: restro
                         }, restro.card.id, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 17,
+                            lineNumber: 19,
                             columnNumber: 30
                         }, undefined))
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 9,
+                lineNumber: 11,
                 columnNumber: 11
             }, undefined)
         ]
@@ -19106,7 +19117,7 @@ $RefreshReg$(_c, "Body");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "resObj", ()=>resObj);
-const resObj = [
+let resObj = [
     {
         card: {
             id: "568239",
@@ -19260,6 +19271,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constants = require("../Utilities/constants");
+var _constantsDefault = parcelHelpers.interopDefault(_constants);
 var _body = require("./Body");
 var _bodyDefault = parcelHelpers.interopDefault(_body);
 const RestaurantCard = ({ resData })=>{
@@ -19270,7 +19282,7 @@ const RestaurantCard = ({ resData })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "res-logo",
                 alt: "briyani",
-                src: (0, _constants.CDN_URL) + cloudinaryImageId
+                src: (0, _constantsDefault.default) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
                 lineNumber: 7,
@@ -19326,6 +19338,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CDN_URL", ()=>CDN_URL);
 const CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+exports.default = CDN_URL;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["aQL8O","7T53S","2kQhy"], "2kQhy", "parcelRequire94c2")
 

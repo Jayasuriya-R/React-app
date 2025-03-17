@@ -3,8 +3,10 @@ import RestaurantCard from "./RestaurantCard";
 const Body = () => {
     return (
         <div className="body">
-          <div className="search-bar">
-           Search
+          <div className="filter">
+           <button className="filter-btn" onClick={()=>{
+            resObj = resObj.filter((res) => res.card.avgRating>4);
+            console.log(resObj)}}>Top rated restaurant</button>
           </div>
           <div className="res-container">
             {

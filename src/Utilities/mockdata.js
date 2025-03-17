@@ -1,4 +1,4 @@
-export const resObj = [
+export let resObj = [
     {
     card: {
       id: "568239",
