@@ -1,24 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import logo from './Assets/App-logo.jpg'
+import logo from '../Assets/App-logo.jpg';
+import  Header  from "./components/Header";
+import Body from "./components/Body";
+import  RestaurantCard  from "./components/RestaurantCard";
 
-/*
 
-Header
--logo
--nav
-
-body
--search bar
--cards container
--card
--img,rating,cusine,del-time,name
-
-footer
--copyright
--links
-
-*/
 const resObj = [{
     card: {
       id: "568239",
@@ -151,63 +138,9 @@ const resObj = [{
     "promoted": true,
     "adTrackingId": "cid=25836602~p=2~adgrpid=25836602#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=490378~eid=56ec95ae-e160-4912-bc5b-050d02f0b03e~srvts=1742192638317~collid=83639"
 }}];
-  
 
 
-const Header = () => {
-    return (
-        <div className="header">
-           <div className="logo-container">
-            <img className="logo"
-            src={logo}/>
-           </div>
-        <div className="nav-items">
-            <ul>
-                <li>Home |</li>
-                <li>About us |</li>
-                <li>Contact us |</li>
-                <li>Cart</li>
-            </ul>
-        </div>
-        </div>
-    )
-}
 
-const RestaurantCard = ({resData}) =>{
-    const { name, cuisines, avgRating,cloudinaryImageId} = resData.card;
-    return(
-        <div className="res-card">
-            <img className="res-logo"
-             alt="briyani" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}></img>
-          <h3>{name}</h3>
-          <h4>{cuisines[0]}</h4>
-          <h4>{avgRating}</h4>
-          <h4>40 mins</h4>
-        </div>
-    )
-}
-
-const Body = () => {
-    return (
-        <div className="body">
-          <div className="search-bar">
-           Search
-          </div>
-          <div className="res-container">
-            {
-                resObj.map(restro => <RestaurantCard key={restro.card.id} resData = {restro}/>)
-            }
-
-         {
-           resObj
-            .filter((restro) => restro.card.avgRating > 4.5 ) // Only high-rated restaurants
-            .map((restro) => <RestaurantCard key={restro.card.id} resData={restro} />)
-}
-        
-          </div>
-        </div>
-    )
-}
 
 const AppLayout = ()=> {
     return (
