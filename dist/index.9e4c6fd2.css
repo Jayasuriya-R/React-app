@@ -1,4 +1,6 @@
 .header {
+  color: #f0f8ff;
+  background-color: #000;
   border: 1px solid #000;
   border-radius: 10px;
   justify-content: space-between;
@@ -11,12 +13,14 @@
 }
 
 .logo {
+  border-radius: 20px;
   width: 90px;
   height: 90px;
 }
 
 .res-container {
   flex-wrap: wrap;
+  margin-left: 100px;
   display: flex;
 }
 
@@ -39,7 +43,24 @@
 }
 
 .search-bar {
+  margin-left: 100px;
   padding: 10px;
+  display: flex;
+}
+
+.filter-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2f4f4f;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.search-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2f4f4f;
+  border-radius: 5px;
 }
 
 .res-logo {
@@ -55,8 +76,32 @@
   border-radius: 10px;
 }
 
-.filter-btn {
-  cursor: pointer;
+.shimmer-container {
+  flex-wrap: wrap;
+  margin-left: 100px;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  border: 1px solid #bbbbc1;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
   margin: 10px;
+}
+
+.shimmer-search-bar {
+  background-color: #f0f0f0;
+  width: 50px;
+  height: 10px;
+}
+
+.search-box {
+  display: inline;
+}
+
+.search {
+  padding: 10px;
 }
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

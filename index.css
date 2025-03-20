@@ -1,9 +1,12 @@
+
 .header{
     display:flex;
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 10px;
     height: 100px;
+    background-color: black;
+    color: aliceblue;
 }
 .logo-container{
     padding: 5px 0 20px 20px;
@@ -11,11 +14,13 @@
 .logo{
     width: 90px;
     height: 90px;
+    border-radius: 20px;
 }
 
 .res-container{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 100px;
 }
 
 .nav-items > ul {
@@ -33,12 +38,27 @@
 .res-card{
     padding: 5px;
     width:200px;
-    height:400px;  
-    
+    height:400px;   
     
 }
 .search-bar{
     padding: 10px;
+    margin-left: 100px;
+    display: flex;
+    
+}
+.filter-btn{
+    background-color: darkslategrey;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.search-btn{
+    background-color: darkslategrey;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer; 
 }
 .res-logo{
     width:100%; 
@@ -52,7 +72,28 @@
     background-color:aliceblue;
     cursor: pointer;
 }
-.filter-btn{
-    margin: 10px;
-    cursor: pointer;
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+.shimmer-card{
+    margin:10px;
+    width:200px;
+    height:300px;  
+    border-radius: 10px;
+    border: 1px solid #bbbbc1;
+    background-color: #f0f0f0;
+}
+.shimmer-search-bar{
+    width:50px;
+    height:10px;
+    background-color: #f0f0f0;
+}
+.search-box{
+    display: inline;
+}
+.search{
+    padding: 10px;
 }

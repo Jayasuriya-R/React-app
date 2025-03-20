@@ -1,5 +1,9 @@
 import logo from '../../Assets/App-logo.jpg';
+import { useState } from 'react';
  const Header = () => {
+
+    const [btnlog , setBtnlog] = useState("Login")
+
     return (
         <div className="header">
            <div className="logo-container">
@@ -12,6 +16,9 @@ import logo from '../../Assets/App-logo.jpg';
                 <li>About us |</li>
                 <li>Contact us |</li>
                 <li>Cart</li>
+                <button className='login-btn' onClick={() =>{
+                    setBtnlog(btnlog=="login"?"logout":"login")
+                }}>{btnlog}</button>
             </ul>
         </div>
         </div>
