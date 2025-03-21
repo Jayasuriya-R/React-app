@@ -2,9 +2,8 @@
   "name": "reactapp",
   "version": "1.0.0",
   "description": "First project",
-  
   "scripts": {
-    "start":"parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -24,6 +23,8 @@
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.30.0",
+    "router-dom": "^3.0.3"
   }
 }

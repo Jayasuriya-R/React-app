@@ -7,12 +7,14 @@ import Shimmer from "./Shimmer";
 const Body = () => {
 
   const [values, setValues] = useState([])
+  const[filteredValues, setFilteredValues] = useState([])
   const [searchTxt , setSearchTxt] = useState("")
     
   
    useEffect(() => {
     const timer = setTimeout(() => {
-      setValues(resObj); // Update state after 2 seconds
+      setValues(resObj);
+      setFilteredValues(resObj);// Update state after 2 seconds
     }, 1000);
    },[])
  
@@ -37,8 +39,11 @@ const Body = () => {
 
             <button className="search-btn"
             onClick={()=>{
-             const searchData = values.filter((res)=>  res.card.card.info.name.includes(searchTxt))
-           setValues(searchData)
+             const searchData = values.filter((res)=>  (res.card.card.info.name).toLowerCase().includes(searchTxt))
+             setFilteredValues(searchData)
+             
+
+           
           }
               }>search</button>
            </div>
@@ -47,12 +52,12 @@ const Body = () => {
             const filteredRestaurant = values.filter(
               (x) =>  x?.card?.card?.info?.avgRating > 4.5
             )
-            setValues(filteredRestaurant)
+            setFilteredValues(filteredRestaurant)
            }}>Top-Rated Restaurants</button>
           </div>
           <div className="res-container">
             {
-                 values.map(restro => <RestaurantCard key={restro?.card?.card?.info?.id} resData = {restro}/>)
+                 filteredValues.map(restro => <RestaurantCard key={restro?.card?.card?.info?.id} resData = {restro}/>)
             }
         
           </div>

@@ -97,3 +97,11 @@
 .search{
     padding: 10px;
 }
+.nav-items{
+    display: flex;
+}
+.app-name{
+    position: absolute;
+    right: 83%;
+    top:30px;
+}
