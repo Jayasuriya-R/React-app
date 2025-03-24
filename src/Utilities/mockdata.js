@@ -15,6 +15,9 @@
     "Biryani",
     "Fast Food"
     ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
     "avgRating": 4.7,
     "veg": true,
     "parentId": "4732",
@@ -116,6 +119,9 @@
     "Biryani",
     "South Indian",
     "Seafood"
+    ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
     ],
     "avgRating": 4.6,
     "parentId": "599700",
@@ -234,6 +240,9 @@
     "Indian",
     "Chinese"
     ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
     "avgRating": 4.4,
     "parentId": "4733",
     "avgRatingString": "4.4",
@@ -346,6 +355,9 @@
     "South Indian",
     "Chinese"
     ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
     "avgRating": 4.3,
     "parentId": "332",
     "avgRatingString": "4.3",
@@ -456,6 +468,9 @@
     "Sweets",
     "Beverages"
     ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
     "avgRating": 4.3,
     "parentId": "469102",
     "avgRatingString": "4.3",
@@ -548,6 +563,9 @@
     "Seafood",
     "Tandoor",
     "South Indian"
+    ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
     ],
     "avgRating": 4.2,
     "parentId": "176137",
@@ -658,6 +676,9 @@
     "Chettinad",
     "South Indian"
     ],
+    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
     "avgRating": 3.9,
     "parentId": "168936",
     "avgRatingString": "3.9",
@@ -754,6 +775,9 @@
         "Chinese",
         "North Indian"
         ],
+        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
         "avgRating": 4.3,
         "parentId": "332",
         "avgRatingString": "4.3",
@@ -864,6 +888,9 @@
         "Biryani",
         "South Indian"
         ],
+        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
         "avgRating": 4.4,
         "parentId": "2120",
         "avgRatingString": "4.4",
@@ -965,6 +992,9 @@
         "Sweets",
         "Beverages"
         ],
+        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
         "avgRating": 4,
         "parentId": "469102",
         "avgRatingString": "4.0",
@@ -1056,6 +1086,9 @@
         "Biryani",
         "Chinese"
         ],
+        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
         "avgRating": 4.5,
         "parentId": "599700",
         "avgRatingString": "4.5",
@@ -1162,6 +1195,9 @@
         "cuisines": [
         "Biryani"
         ],
+        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
         "avgRating": 4.1,
         "parentId": "11840",
         "avgRatingString": "4.1",
@@ -1270,6 +1306,9 @@
         "cuisines": [
         "Biryani"
         ],
+        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
+        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    ],
         "avgRating": 4.5,
         "parentId": "5455",
         "avgRatingString": "4.5",

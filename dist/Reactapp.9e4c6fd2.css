@@ -8,6 +8,11 @@
   display: flex;
 }
 
+.header a {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+
 .logo-container {
   padding: 5px 0 20px 20px;
 }
@@ -37,7 +42,7 @@
 }
 
 .res-card {
-  width: 200px;
+  width: 250px;
   height: 400px;
   padding: 5px;
 }
@@ -113,5 +118,15 @@
   position: absolute;
   top: 30px;
   right: 83%;
+}
+
+.body a {
+  color: #000;
+  text-decoration: none;
+}
+
+.about-card {
+  border: 1px solid #000;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=Reactapp.9e4c6fd2.css.map */
