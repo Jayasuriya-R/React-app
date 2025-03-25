@@ -1,23 +1,41 @@
-import React
- from "react";
+import React from "react";
 class UserClass extends React.Component{
     constructor(props){
         super(props);
+
         this.state = {
-            count : 0,
+            info:{
+                login:"dumy",
+                avatar_url:"http://hi"
+                
+            }
         }
+        
     }
+    
+    async componentDidMount(){
+        const data = await fetch("https://api.github.com/users/Jayasuriya-R");
+        const json = await data.json()
+
+        this.setState({
+            info: json,
+         })
+     }
+
+     
+
+
     render(){
+        
+
+        const {login,avatar_url} = this.state.info
         return(
             <div >
-            <h1>Name: {this.props.name}</h1>
+            <h1>Name: {login}</h1>
             <h3>Location : CBE</h3>
-            <button  onClick={ () => {
-                this.setState ({
-                    count: this.state.count +1
-                })
-            }}>Click : {this.state.count}</button>
-            {console.log("render")}
+            <img src={avatar_url}/>
+            <button></button>
+
             </div>
         )
     }

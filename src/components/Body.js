@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useStatusCheck from "../Utilities/useStatusCheck.js";
 
 
 const Body = () => {
@@ -28,6 +29,10 @@ const Body = () => {
       //console.log(filteredData)
       setValues(filteredData)
     }
+
+   const status = useStatusCheck()
+
+   if(status === false) return <h1>Oops something went wrong it seems your offline...</h1>
    
     return values.length === 0? <Shimmer/> : (
         <div className="body">

@@ -26078,6 +26078,8 @@ var _react = require("react");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _reactRouterDom = require("react-router-dom");
+var _useStatusCheckJs = require("../Utilities/useStatusCheck.js");
+var _useStatusCheckJsDefault = parcelHelpers.interopDefault(_useStatusCheckJs);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
@@ -26098,9 +26100,17 @@ const Body = ()=>{
         //console.log(filteredData)
         setValues(filteredData);
     };
+    const status = (0, _useStatusCheckJsDefault.default)();
+    if (status === false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Oops something went wrong it seems your offline..."
+    }, void 0, false, {
+        fileName: "src/components/Body.js",
+        lineNumber: 35,
+        columnNumber: 32
+    }, undefined);
     return values.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 32,
+        lineNumber: 37,
         columnNumber: 33
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -26119,7 +26129,7 @@ const Body = ()=>{
                                 onChange: (e)=>setSearchTxt(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 36,
+                                lineNumber: 41,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26131,13 +26141,13 @@ const Body = ()=>{
                                 children: "search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 41,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 35,
+                        lineNumber: 40,
                         columnNumber: 12
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -26149,13 +26159,13 @@ const Body = ()=>{
                         children: "Top-Rated Restaurants"
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 52,
+                        lineNumber: 57,
                         columnNumber: 12
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 34,
+                lineNumber: 39,
                 columnNumber: 11
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26166,27 +26176,31 @@ const Body = ()=>{
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 64,
+                            lineNumber: 69,
                             columnNumber: 18
                         }, undefined)
                     }, restro?.card?.card?.info?.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 62,
+                        lineNumber: 67,
                         columnNumber: 19
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 59,
+                lineNumber: 64,
                 columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 33,
+        lineNumber: 38,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "1qb/ojwUNviwhbnq3Dgs05o8VRo=");
+_s(Body, "KhDGhwnbG1JFX2+Uv/FGbde6VKM=", false, function() {
+    return [
+        (0, _useStatusCheckJsDefault.default)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -26197,7 +26211,7 @@ $RefreshReg$(_c, "Body");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","../Utilities/mockdata":"1xjTr","./RestaurantCard":"lCpT9","react":"jMk1U","./Shimmer":"fSZbx","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w"}],"1xjTr":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","../Utilities/mockdata":"1xjTr","./RestaurantCard":"lCpT9","react":"jMk1U","./Shimmer":"fSZbx","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w","../Utilities/useStatusCheck.js":"lMxPi"}],"1xjTr":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "resObj", ()=>resObj);
@@ -28163,7 +28177,40 @@ $RefreshReg$(_c, "Shimmer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bv2mH":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lMxPi":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$b109 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$b109.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b109.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _s = $RefreshSig$();
+const useStatusCheck = ()=>{
+    _s();
+    const [status, setStatus] = (0, _react.useState)(true);
+    (0, _react.useEffect)(()=>{
+        window.addEventListener("offline", ()=>{
+            setStatus(false);
+            window.addEventListener("online", ()=>{
+                setStatus(true);
+            });
+        });
+    }, []);
+    return status;
+};
+_s(useStatusCheck, "YEm6bcmWAfKQ/sO7AUsCEPnNcf0=");
+exports.default = useStatusCheck;
+
+  $parcel$ReactRefreshHelpers$b109.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bv2mH":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$f021 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$f021.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -28178,49 +28225,53 @@ var _header = require("./Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _userClass = require("./UserClass");
 var _userClassDefault = parcelHelpers.interopDefault(_userClass);
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "about-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "About"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: "This is about the "
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 9,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
-                name: "Surya(class)"
-            }, void 0, false, {
-                fileName: "src/components/About.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/About.js",
-        lineNumber: 6,
-        columnNumber: 9
-    }, undefined);
-};
-_c = About;
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class About extends (0, _reactDefault.default).Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "about-card",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "About"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 17,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                    children: "This is about the "
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 18,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userClassDefault.default), {
+                    name: "Surya(class)"
+                }, void 0, false, {
+                    fileName: "src/components/About.js",
+                    lineNumber: 19,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/About.js",
+            lineNumber: 15,
+            columnNumber: 13
+        }, this);
+    }
+}
 exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
 
   $parcel$ReactRefreshHelpers$f021.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Header":"3PJ6N","./UserClass":"dHre4"}],"dHre4":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Header":"3PJ6N","./UserClass":"dHre4","react":"jMk1U"}],"dHre4":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$05f4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$05f4.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -28237,49 +28288,56 @@ class UserClass extends (0, _reactDefault.default).Component {
     constructor(props){
         super(props);
         this.state = {
-            count: 0
+            info: {
+                login: "dumy",
+                avatar_url: "http://hi"
+            }
         };
     }
+    async componentDidMount() {
+        const data = await fetch("https://api.github.com/users/Jayasuriya-R");
+        const json = await data.json();
+        this.setState({
+            info: json
+        });
+    }
     render() {
+        const { login, avatar_url } = this.state.info;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     children: [
                         "Name: ",
-                        this.props.name
+                        login
                     ]
                 }, void 0, true, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 13,
+                    lineNumber: 34,
                     columnNumber: 13
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                     children: "Location : CBE"
                 }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 14,
+                    lineNumber: 35,
                     columnNumber: 13
                 }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        this.setState({
-                            count: this.state.count + 1
-                        });
-                    },
-                    children: [
-                        "Click : ",
-                        this.state.count
-                    ]
-                }, void 0, true, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: avatar_url
+                }, void 0, false, {
                     fileName: "src/components/UserClass.js",
-                    lineNumber: 15,
+                    lineNumber: 36,
                     columnNumber: 13
                 }, this),
-                console.log("render")
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {}, void 0, false, {
+                    fileName: "src/components/UserClass.js",
+                    lineNumber: 37,
+                    columnNumber: 13
+                }, this)
             ]
         }, void 0, true, {
             fileName: "src/components/UserClass.js",
-            lineNumber: 12,
+            lineNumber: 33,
             columnNumber: 13
         }, this);
     }
