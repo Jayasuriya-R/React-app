@@ -228,7 +228,7 @@
     "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     "info": {
     "id": "58343",
-    "name": "HariBhavanam",
+    "name": "Hari Bhavanam",
     "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/2/12/5afc3059-f935-433a-99da-824b91309239_0cfce019-049c-4b9f-a376-d16123aa142f.jpg",
     "locality": "Gandhipuram",
     "areaName": "RS Puram",
