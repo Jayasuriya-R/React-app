@@ -15,8 +15,11 @@
     "Biryani",
     "Fast Food"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 4.7,
     "veg": true,
@@ -120,12 +123,16 @@
     "South Indian",
     "Seafood"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 4.6,
     "parentId": "599700",
     "avgRatingString": "4.6",
+    "promoted":false,
     "totalRatingsString": "57K+",
     "sla": {
     "deliveryTime": 16,
@@ -240,8 +247,11 @@
     "Indian",
     "Chinese"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 4.4,
     "parentId": "4733",
@@ -355,11 +365,15 @@
     "South Indian",
     "Chinese"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 4.3,
     "parentId": "332",
+    "promoted":false,
     "avgRatingString": "4.3",
     "totalRatingsString": "11K+",
     "sla": {
@@ -468,8 +482,11 @@
     "Sweets",
     "Beverages"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+   "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 4.3,
     "parentId": "469102",
@@ -564,12 +581,16 @@
     "Tandoor",
     "South Indian"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 4.2,
     "parentId": "176137",
     "avgRatingString": "4.2",
+    "promoted":false,
     "totalRatingsString": "2.9K+",
     "sla": {
     "deliveryTime": 12,
@@ -676,8 +697,11 @@
     "Chettinad",
     "South Indian"
     ],
-    "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+    "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
     "avgRating": 3.9,
     "parentId": "168936",
@@ -775,8 +799,11 @@
         "Chinese",
         "North Indian"
         ],
-        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+       "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
         "avgRating": 4.3,
         "parentId": "332",
@@ -888,12 +915,16 @@
         "Biryani",
         "South Indian"
         ],
-        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+        "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
         "avgRating": 4.4,
         "parentId": "2120",
         "avgRatingString": "4.4",
+        "promoted":false,
         "totalRatingsString": "5.5K+",
         "sla": {
         "deliveryTime": 20,
@@ -992,8 +1023,11 @@
         "Sweets",
         "Beverages"
         ],
-        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+       "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
         "avgRating": 4,
         "parentId": "469102",
@@ -1086,12 +1120,16 @@
         "Biryani",
         "Chinese"
         ],
-        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+      "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
         "avgRating": 4.5,
         "parentId": "599700",
         "avgRatingString": "4.5",
+        "promoted":false,
         "totalRatingsString": "18K+",
         "sla": {
         "deliveryTime": 26,
@@ -1195,8 +1233,11 @@
         "cuisines": [
         "Biryani"
         ],
-        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+      "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
         "avgRating": 4.1,
         "parentId": "11840",
@@ -1306,12 +1347,16 @@
         "cuisines": [
         "Biryani"
         ],
-        "foodMenu" :['lemon rice','Mutton briyani', 'chicken briyani', 'Bucket chicken', 'fried chicken'
-        , 'Non-rotti', 'chicken curry','chettinad chicken','pepper chicken'
+       "foodMenu" :[{'name':'lemon rice','price':100}
+        ,{'name':'Mutton briyani','price':350}, {'name':'chicken briyani','price':250}, {'name':'Bucket chicken','price':250}, 
+        {'name':'fried chicken','price':399}
+        , {'name':'Non-rotti','price':85},{ 'name':'chicken curry','price':180},
+        {'name':'chettinad chicken','price':200}
     ],
         "avgRating": 4.5,
         "parentId": "5455",
         "avgRatingString": "4.5",
+         "promoted":false,
         "totalRatingsString": "473",
         "sla": {
         "deliveryTime": 19,

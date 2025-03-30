@@ -1,34 +1,42 @@
-import { resObj } from "../Utilities/mockdata"
 import Shimmer from "./Shimmer"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useParams } from "react-router-dom"
+import useDataFetch from "../Utilities/useDataFetch"
+import ResMenuAccordian from "./ResMenuAccordian"
 
 const RestaurantMenu = ({resobj}) => {
- const [resData, setResData] = useState(null)
- const {resId} = useParams()
- useEffect(()=> {
-    setTimeout(()=> {
-        setResData(resObj[resId])
-    },500)
- },[])
  
+const [showMenu, SetShowMenu] = useState(false)
+ const {resId} = useParams()
+
+ const handleClick = ()=> {
+  showMenu?SetShowMenu(false) : SetShowMenu(true)
+ }
+ 
+ const resData = useDataFetch(resId)
 
  if(resData == null) return <Shimmer/>
  const {name,costForTwo, cuisines,sla,areaName,totalRatingsString,foodMenu} = resData.card.card.info;
   return (
-    <div className="menu">
-        <h1>{name}</h1>
-        <h3>{cuisines.join(" ,")} - {costForTwo} </h3>
-        <p> Deliverable within <strong>{sla.slaString}</strong> </p>
-        <p>Total Ratings - <strong>{totalRatingsString}</strong></p>
+    <div className="text-center">
+        <h1 className="font-extrabold m-4 mr-56 ">{name}</h1>
+        <div className="border-1 rounded-[15px] max-w-[400px] m-auto mb-10 shadow-md p-5 bg-gray-200">
+        <h3 className="font-bold mb-2">{cuisines.join(" ,")} - {costForTwo} </h3>
+        <p> Deliverable within <strong className="text-red-400">{sla.slaString}</strong> </p>
+        <p>Total Ratings - <strong className="text-red-400">{totalRatingsString}</strong></p>
         <p>Located at - {areaName}</p>
-        <h2>Menu</h2>
-        <ul>
-            {foodMenu.map((x,index) => {
-                return <li key={index}>{x}</li>
-            } )}
-        </ul>
-    </div>
+        </div>
+        <hr className="max-w-[600px] m-auto mb-3"/>
+
+        <div className="m-auto bg-gray-50 border-gray-200 w-[50%] p-2 rounded-[10px] shadow-lg cursor-pointer">
+            <div className="flex justify-between bg-gray-200 rounded-lg px-2" onClick={handleClick}>
+            <h2 className="font-medium text-lg">Menu</h2>
+            <span>🔻</span>
+            </div>
+            { showMenu && <ResMenuAccordian data={foodMenu}/>}
+        </div>
+     </div>
+    
   )
 }
 
