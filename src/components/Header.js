@@ -2,12 +2,17 @@ import { IMG_URL } from '../Utilities/constants';
 import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useStatusCheck from '../Utilities/useStatusCheck';
+import userContext from '../Utilities/userContext';
+import { useContext } from 'react';
 
  const Header = () => {
 
     const [btnlog , setBtnlog] = useState("Login")
 
     const status = useStatusCheck()
+
+    const {loggedIn} = useContext(userContext)
+   
 
     useEffect(()=>{
         console.log("useeffect called")
@@ -30,6 +35,8 @@ import useStatusCheck from '../Utilities/useStatusCheck';
                 <button className='bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px]' onClick={() =>{
                     setBtnlog(btnlog=="login"?"logout":"login")
                 }}>{btnlog}</button>
+                { btnlog === "logout" &&
+                <li className='px-3'>Hi {loggedIn}🙋‍♂️</li>}
             </ul>
         </div>
         </div>
