@@ -8,16 +8,21 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Shimmer from "./components/Shimmer";
+import { useState } from "react";
+import userContext from "./Utilities/userContext";
 //import Grocery from "./components/Grocery";
 
 const Grocery = lazy(()=> import("./components/Grocery"));
 
 const AppLayout = ()=> {
+  const [userName, setUserName] = useState("Surya")
     return (
+      <userContext.Provider value={{loggedIn : userName , setUserName}}>
         <div className="app">
            <Header/>
            <Outlet/>
         </div>
+        </userContext.Provider>
     )
 }
 

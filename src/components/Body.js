@@ -1,16 +1,18 @@
 import { resObj } from "../Utilities/mockdata";
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useStatusCheck from "../Utilities/useStatusCheck.js";
 import useApiFetch from "../Utilities/useApiFetch.js";
+import userContext from "../Utilities/userContext.js";
 
 const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
   const [values, setValues] = useState([]);
   const [filteredValues, setFilteredValues] = useState([]);
+  
 
   const LabeledRestaurantCard = withPromotedLabel(RestaurantCard);
 
@@ -22,6 +24,8 @@ const Body = () => {
   }, []);
 
   const status = useStatusCheck();
+
+  const {setUserName,loggedIn} = useContext(userContext);
 
   if (status === false)
     return <h1>Oops something went wrong it seems your offline...</h1>;
@@ -65,6 +69,12 @@ const Body = () => {
           >
             Top-Rated Restaurants
           </button>
+        </div>
+
+        <div className="mt-7 ">
+          <label className="font-medium">UserName : </label>
+          <input className="border-1 rounded-xs p-1" placeholder="Username" type="search"
+           onChange={(e) => setUserName(e.target.value)}></input>
         </div>
       </div>
       <div className="flex flex-wrap ml-[50px]">
