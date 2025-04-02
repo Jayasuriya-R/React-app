@@ -2,7 +2,7 @@ import { IMG_URL } from '../Utilities/constants';
 import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useStatusCheck from '../Utilities/useStatusCheck';
-import userContext from '../Utilities/userContext';
+import userContext from '../Utilities/UserContext';
 import { useContext } from 'react';
 
  const Header = () => {

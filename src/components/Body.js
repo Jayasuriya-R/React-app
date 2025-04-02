@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useStatusCheck from "../Utilities/useStatusCheck.js";
 import useApiFetch from "../Utilities/useApiFetch.js";
-import userContext from "../Utilities/userContext.js";
+import  UserContext from "../Utilities/UserContext.js"
 
 const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
@@ -25,7 +25,7 @@ const Body = () => {
 
   const status = useStatusCheck();
 
-  const {setUserName,loggedIn} = useContext(userContext);
+  const {setUserName,loggedIn} = useContext(UserContext);
 
   if (status === false)
     return <h1>Oops something went wrong it seems your offline...</h1>;
