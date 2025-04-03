@@ -2,8 +2,11 @@ import { IMG_URL } from '../Utilities/constants';
 import { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useStatusCheck from '../Utilities/useStatusCheck';
-import userContext from '../Utilities/UserContext';
+import UserContext from '../Utilities/UserContext';
 import { useContext } from 'react';
+import { useSelector } from 'react-redux';
+
+
 
  const Header = () => {
 
@@ -11,12 +14,14 @@ import { useContext } from 'react';
 
     const status = useStatusCheck()
 
-    const {loggedIn} = useContext(userContext)
-   
+    const {loggedIn} = useContext(UserContext)
 
-    useEffect(()=>{
-        console.log("useeffect called")
-    },[btnlog])
+    //subscribing to our store suing selector
+    const cartItems = useSelector((store)=> store.cart.items);
+    
+    console.log(cartItems);
+
+
 
     return (
         <div className="flex justify-between shadow-lg mt-4 bg-black text-white">
@@ -31,7 +36,7 @@ import { useContext } from 'react';
                 <li className='px-3'><Link to="/about">About us</Link></li>
                 <li className='px-3'><Link to="/contact">Contact us</Link></li>
                 <li className='px-3'><Link to="/grocery">Grocery</Link></li>
-                <li className='px-3'>Cart</li>
+                <li className='px-3'><Link to="/cart">Cart - {cartItems.length}</Link></li>
                 <button className='bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px]' onClick={() =>{
                     setBtnlog(btnlog=="login"?"logout":"login")
                 }}>{btnlog}</button>
