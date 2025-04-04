@@ -19,7 +19,7 @@ const ResMenuAccordian = ({data})=>{
             {data.map((x,index) => {
                 return (<div key={index} className="">
                 <div key={id} className="flex justify-between border-b-1 px-2"> <li className="my-4 py-2  border-gray-300 text-stone-900 font-medium">{x.name} - ₹ {x.price}</li> 
-                <button className="border-1 max-h-9 m-4 min-w-[50px] rounded-lg bg-orange-300 text-black cursor-pointer border-b-0" 
+                <button className="border-1 max-h-9 m-4 min-w-[50px] rounded-lg bg-orange-300 text-black cursor-pointer border-b-0 hover:bg-orange-600" 
                 onClick={() => handleAddItem(x)} > Add </button>
                 
                 </div>

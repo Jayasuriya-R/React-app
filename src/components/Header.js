@@ -19,7 +19,7 @@ import { useSelector } from 'react-redux';
     //subscribing to our store suing selector
     const cartItems = useSelector((store)=> store.cart.items);
     
-    console.log(cartItems);
+    
 
 
 
@@ -37,7 +37,7 @@ import { useSelector } from 'react-redux';
                 <li className='px-3'><Link to="/contact">Contact us</Link></li>
                 <li className='px-3'><Link to="/grocery">Grocery</Link></li>
                 <li className='px-3'><Link to="/cart">Cart - {cartItems.length}</Link></li>
-                <button className='bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px]' onClick={() =>{
+                <button className='bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px] cursor-pointer' onClick={() =>{
                     setBtnlog(btnlog=="login"?"logout":"login")
                 }}>{btnlog}</button>
                 { btnlog === "logout" &&
