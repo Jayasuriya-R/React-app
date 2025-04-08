@@ -9,13 +9,14 @@
     --color-red-800: oklch(44.4% .177 26.899);
     --color-orange-300: oklch(83.7% .128 66.29);
     --color-orange-600: oklch(64.6% .222 41.116);
-    --color-amber-950: oklch(27.9% .077 45.635);
+    --color-amber-200: oklch(92.4% .12 95.746);
     --color-green-100: oklch(96.2% .044 156.743);
     --color-blue-50: oklch(97% .014 254.604);
     --color-pink-800: oklch(45.9% .187 3.815);
     --color-gray-50: oklch(98.5% .002 247.839);
     --color-gray-200: oklch(92.8% .006 264.531);
     --color-gray-300: oklch(87.2% .01 258.338);
+    --color-gray-800: oklch(27.8% .033 256.848);
     --color-stone-900: oklch(21.6% .006 56.043);
     --color-black: #000;
     --color-white: #fff;
@@ -26,6 +27,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -430,6 +433,10 @@
     margin-top: calc(var(--spacing) * 15);
   }
 
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
+  }
+
   .mt-44 {
     margin-top: calc(var(--spacing) * 44);
   }
@@ -466,8 +473,8 @@
     margin-left: calc(var(--spacing) * 4);
   }
 
-  .ml-52 {
-    margin-left: calc(var(--spacing) * 52);
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
   }
 
   .ml-\[50px\] {
@@ -484,10 +491,6 @@
 
   .ml-\[65px\] {
     margin-left: 65px;
-  }
-
-  .ml-\[100px\] {
-    margin-left: 100px;
   }
 
   .ml-\[120px\] {
@@ -542,6 +545,14 @@
     display: table;
   }
 
+  .h-10\/12 {
+    height: 83.3333%;
+  }
+
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -570,16 +581,32 @@
     height: 350px;
   }
 
+  .h-screen {
+    height: 100vh;
+  }
+
   .max-h-9 {
     max-height: calc(var(--spacing) * 9);
   }
 
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
-
   .w-2\/12 {
     width: 16.6667%;
+  }
+
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+
+  .w-11\/12 {
+    width: 91.6667%;
+  }
+
+  .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+
+  .w-20 {
+    width: calc(var(--spacing) * 20);
   }
 
   .w-24 {
@@ -618,6 +645,10 @@
     width: 300px;
   }
 
+  .w-screen {
+    width: 100vw;
+  }
+
   .max-w-\[400px\] {
     max-width: 400px;
   }
@@ -634,16 +665,12 @@
     min-width: 75px;
   }
 
-  .flex-shrink, .shrink {
+  .shrink {
     flex-shrink: 1;
   }
 
-  .flex-grow, .grow {
+  .grow {
     flex-grow: 1;
-  }
-
-  .border-collapse {
-    border-collapse: collapse;
   }
 
   .rotate-90 {
@@ -710,6 +737,10 @@
     border-radius: 15px;
   }
 
+  .rounded-full {
+    border-radius: 3.40282e38px;
+  }
+
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -747,8 +778,8 @@
     border-style: none;
   }
 
-  .border-amber-950 {
-    border-color: var(--color-amber-950);
+  .border-black {
+    border-color: var(--color-black);
   }
 
   .border-gray-200 {
@@ -757,6 +788,18 @@
 
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+
+  .border-r-\[50\%\] {
+    border-right-color: 50%;
+  }
+
+  .bg-\[\#FCE9D7\] {
+    background-color: #fce9d7;
+  }
+
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
   }
 
   .bg-black {
@@ -773,6 +816,10 @@
 
   .bg-gray-300 {
     background-color: var(--color-gray-300);
+  }
+
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
   }
 
   .bg-green-100 {
@@ -811,6 +858,14 @@
     padding: calc(var(--spacing) * 5);
   }
 
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
+  }
+
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -821,6 +876,14 @@
 
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
 
   .py-1 {
@@ -854,6 +917,11 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
 
   .text-lg {
@@ -907,6 +975,10 @@
 
   .italic {
     font-style: italic;
+  }
+
+  .font-stretch-expanded {
+    font-stretch: expanded;
   }
 
   .underline {

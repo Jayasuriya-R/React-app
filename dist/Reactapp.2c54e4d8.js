@@ -16294,7 +16294,7 @@ const Header = ()=>{
                             className: "px-3",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                children: "Home"
+                                children: "Home  |"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 35,
@@ -16309,7 +16309,7 @@ const Header = ()=>{
                             className: "px-3",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/about",
-                                children: "About us"
+                                children: "About us  |"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 36,
@@ -16324,7 +16324,7 @@ const Header = ()=>{
                             className: "px-3",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
-                                children: "Contact us"
+                                children: "Contact us  |"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 37,
@@ -16339,7 +16339,7 @@ const Header = ()=>{
                             className: "px-3",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/grocery",
-                                children: "Grocery"
+                                children: "Grocery  |"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 38,
@@ -16356,7 +16356,14 @@ const Header = ()=>{
                                 to: "/cart",
                                 children: [
                                     "Cart - ",
-                                    cartItems.length
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "border-1 rounded-full w-16 h-16 bg-amber-200 text-black p-1",
+                                        children: cartItems.length
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.js",
+                                        lineNumber: 39,
+                                        columnNumber: 62
+                                    }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Header.js",
@@ -29696,7 +29703,7 @@ class About extends (0, _reactDefault.default).Component {
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "h-60 bg-pink-800 border-2 relative flex justify-center ",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "font-bold justify-center text-xl mt-10",
+                        className: "font-bold justify-center text-xl mt-10 font-stretch-expanded",
                         children: "About"
                     }, void 0, false, {
                         fileName: "src/components/About.js",
@@ -62370,18 +62377,140 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _header = require("./Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-            children: "Contact us"
-        }, void 0, false, {
+        className: "bg-gray-800 w-screen h-screen flex justify-center items-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-[#FCE9D7] border-2 border-black absolute w-11/12 h-10/12 ",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "p-8 mt-24 font-extrabold text-4xl",
+                    children: "Contact us"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "px-8 ml-5 font-bold text-2xl",
+                    children: [
+                        "Have Queries ? \uD83D\uDE0B\uD83D\uDE09\uD83E\uDD16\uD83D\uDC49 Let's get connected ! ",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "https://www.linkedin.com/in/jayasuriya-r/",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                icon: (0, _freeBrandsSvgIcons.faLinkedin),
+                                size: "2x"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 16,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 15,
+                            columnNumber: 33
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "p-10 ml-5 font-medium",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "my-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                    icon: (0, _freeSolidSvgIcons.faMapMarkerAlt)
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 21,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "p-3",
+                                    children: "Accenture, coimbatore."
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 21,
+                                    columnNumber: 52
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 20,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "my-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                    icon: (0, _freeSolidSvgIcons.faPhone)
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 24,
+                                    columnNumber: 11
+                                }, undefined),
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "p-2",
+                                    children: " +45 71 99 77 07"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 24,
+                                    columnNumber: 46
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 23,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                                    icon: (0, _freeSolidSvgIcons.faEnvelope)
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 27,
+                                    columnNumber: 11
+                                }, undefined),
+                                " ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "mailto:mail@sleeknote.com",
+                                    className: "p-2",
+                                    children: "mail@sleeknote.com"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 27,
+                                    columnNumber: 49
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 26,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 19,
+                    columnNumber: 7
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/components/Contact.js",
-            lineNumber: 6,
-            columnNumber: 8
+            lineNumber: 10,
+            columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Contact.js",
-        lineNumber: 4,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
@@ -62395,7 +62524,7 @@ $RefreshReg$(_c, "Contact");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./Header":"3PJ6N","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"h9Vh3":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./Header":"3PJ6N","@fortawesome/react-fontawesome":"iVKob","@fortawesome/free-solid-svg-icons":"gQz28","@fortawesome/free-brands-svg-icons":"7DLhV","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"h9Vh3":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$16fb = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$16fb.init();
 var prevRefreshReg = globalThis.$RefreshReg$;

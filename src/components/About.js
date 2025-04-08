@@ -15,7 +15,7 @@ class About extends React.Component{
         return(
             <div className="relative">
             <div className="h-60 bg-pink-800 border-2 relative flex justify-center ">
-            <h1 className="font-bold justify-center text-xl mt-10">About</h1>
+            <h1 className="font-bold justify-center text-xl mt-10 font-stretch-expanded">About</h1>
             </div>
             <div className="border-2 ml-[500px] w-52 h-60 text-center absolute top-[0.25px] left-10 mt-[120px] bg-black text-white shadow-xl rounded-2xl">
             
