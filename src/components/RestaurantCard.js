@@ -1,7 +1,7 @@
  import {CDN_URL } from "../Utilities/constants";
  import Body from "./Body";
  import resObj from "../Utilities/mockdata";
- import CDN_URL from "../Utilities/constants";
+ import {CDN_URL} from "../Utilities/constants";
 
 
  const RestaurantCard = (props) => {
