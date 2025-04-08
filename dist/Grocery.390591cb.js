@@ -678,8 +678,16 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Grocery = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "This is a grocery store!"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex justify-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            className: "mt-5 font-extrabold text-l font-serif shadow-2xl",
+            children: "Soon you can order groceries here...!"
+        }, void 0, false, {
+            fileName: "src/components/Grocery.js",
+            lineNumber: 4,
+            columnNumber: 5
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/Grocery.js",
         lineNumber: 3,

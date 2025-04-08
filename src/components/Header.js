@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux';
 
  const Header = () => {
 
-    const [btnlog , setBtnlog] = useState("Login")
+    const [btnlog , setBtnlog] = useState("login")
 
     const status = useStatusCheck()
 
@@ -31,17 +31,17 @@ import { useSelector } from 'react-redux';
            </div>
         <div className="flex items-center">
             
-            <ul className='flex p-4 m-4'>
-                <li className='px-3'><Link to="/">Home  |</Link></li>
-                <li className='px-3'><Link to="/about">About us  |</Link></li>
-                <li className='px-3'><Link to="/contact">Contact us  |</Link></li>
-                <li className='px-3'><Link to="/grocery">Grocery  |</Link></li>
-                <li className='px-3'><Link to="/cart">Cart - <span className='border-1 rounded-full w-16 h-16 bg-amber-200 text-black p-1'>{cartItems.length}</span></Link></li>
+            <ul className='flex py-4 px-2 m-4'>
+                <li className='px-2'><Link to="/">Home  |</Link></li>
+                <li className='px-2'><Link to="/about">About us  |</Link></li>
+                <li className='px-2'><Link to="/contact">Contact us  |</Link></li>
+                <li className='px-2'><Link to="/grocery">Grocery  |</Link></li>
+                <li className='px-2 mt-0.5'><Link to="/cart"><span className='border-1 rounded-full w-16 h-16 mt-1 bg-amber-200 text-black p-2'>Cart - {cartItems.length} items</span></Link></li>
                 <button className='bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px] cursor-pointer' onClick={() =>{
-                    setBtnlog(btnlog=="login"?"logout":"login")
+                    setBtnlog(btnlog === "login"?"logout":"login")
                 }}>{btnlog}</button>
                 { btnlog === "logout" &&
-                <li className='px-3'>Hi {loggedIn}🙋‍♂️</li>}
+                <li className='px-2'>Hi {loggedIn}🙋‍♂️</li>}
             </ul>
         </div>
         </div>

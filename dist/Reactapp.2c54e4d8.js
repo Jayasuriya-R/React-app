@@ -16262,7 +16262,7 @@ var _reactRedux = require("react-redux");
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
-    const [btnlog, setBtnlog] = (0, _react.useState)("Login");
+    const [btnlog, setBtnlog] = (0, _react.useState)("login");
     const status = (0, _useStatusCheckDefault.default)();
     const { loggedIn } = (0, _react.useContext)((0, _userContextDefault.default));
     //subscribing to our store suing selector
@@ -16288,10 +16288,10 @@ const Header = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex items-center",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    className: "flex p-4 m-4",
+                    className: "flex py-4 px-2 m-4",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3",
+                            className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
                                 children: "Home  |"
@@ -16306,7 +16306,7 @@ const Header = ()=>{
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3",
+                            className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/about",
                                 children: "About us  |"
@@ -16321,7 +16321,7 @@ const Header = ()=>{
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3",
+                            className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
                                 children: "Contact us  |"
@@ -16336,7 +16336,7 @@ const Header = ()=>{
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3",
+                            className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/grocery",
                                 children: "Grocery  |"
@@ -16351,24 +16351,25 @@ const Header = ()=>{
                             columnNumber: 17
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3",
+                            className: "px-2 mt-0.5",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/cart",
-                                children: [
-                                    "Cart - ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "border-1 rounded-full w-16 h-16 bg-amber-200 text-black p-1",
-                                        children: cartItems.length
-                                    }, void 0, false, {
-                                        fileName: "src/components/Header.js",
-                                        lineNumber: 39,
-                                        columnNumber: 62
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "border-1 rounded-full w-16 h-16 mt-1 bg-amber-200 text-black p-2",
+                                    children: [
+                                        "Cart - ",
+                                        cartItems.length,
+                                        " items"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 39,
+                                    columnNumber: 62
+                                }, undefined)
+                            }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 39,
-                                columnNumber: 38
+                                columnNumber: 45
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
@@ -16378,7 +16379,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: "bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px] cursor-pointer",
                             onClick: ()=>{
-                                setBtnlog(btnlog == "login" ? "logout" : "login");
+                                setBtnlog(btnlog === "login" ? "logout" : "login");
                             },
                             children: btnlog
                         }, void 0, false, {
@@ -16387,7 +16388,7 @@ const Header = ()=>{
                             columnNumber: 17
                         }, undefined),
                         btnlog === "logout" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            className: "px-3",
+                            className: "px-2",
                             children: [
                                 "Hi ",
                                 loggedIn,
@@ -16416,7 +16417,7 @@ const Header = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_s(Header, "oKlBas2kvbt2RMwssq8RZJ82AhY=", false, function() {
+_s(Header, "NG7KLx8m7a+VzB32sIsWy/fPueg=", false, function() {
     return [
         (0, _useStatusCheckDefault.default),
         (0, _reactRedux.useSelector)
@@ -29820,7 +29821,7 @@ class UserClass extends (0, _reactDefault.default).Component {
         super(props);
         this.state = {
             info: {
-                login: "dumy",
+                login: "",
                 avatar_url: "http://hi"
             }
         };
@@ -67002,14 +67003,14 @@ const ResMenuAccordian = ({ data })=>{
                             columnNumber: 86
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "my-2 absolute ml-[420px]",
+                            className: "my-2 absolute ml-[420px] transition-transform duration-300 hover:scale-105",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                 className: "w-24 h-20 rounded-2xl",
                                 src: x.imgid
                             }, void 0, false, {
                                 fileName: "src/components/ResMenuAccordian.js",
                                 lineNumber: 22,
-                                columnNumber: 60
+                                columnNumber: 110
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/ResMenuAccordian.js",
