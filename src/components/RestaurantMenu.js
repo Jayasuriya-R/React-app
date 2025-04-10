@@ -39,8 +39,8 @@ const [showLoc, setShowLoc] = useState(false)
         </div>
         <hr className="max-w-[600px] m-auto mb-3"/>
 
-        <div className="m-auto bg-gray-50 border-gray-200 w-[50%] p-2 rounded-[10px] shadow-lg cursor-pointer">
-            <div className="flex justify-between bg-gray-200 rounded-lg px-2" onClick={handleClick}>
+        <div className="m-auto bg-gray-50 border-gray-200 w-[50%] p-2 rounded-[10px] shadow-lg cursor-pointer transition-all duration-300 ease-in-out ">
+            <div className="flex justify-between bg-gray-200 rounded-lg px-2 " onClick={handleClick}>
             <h2 className="font-medium text-lg">Menu</h2>
             <span>{showMenu? closeDropDown:dropDown }</span>
             </div>

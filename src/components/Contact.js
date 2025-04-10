@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="bg-gray-800 w-screen h-screen flex justify-center items-center">
     <div className="bg-[#FCE9D7] border-2 border-black absolute w-11/12 h-10/12 ">
         
-        <h2 className="p-8 mt-24 font-extrabold text-4xl">Contact us</h2>
+        <h1 className="p-8 mt-24 font-extrabold text-4xl">Contact us</h1>
 
         <p className="px-8 ml-5 font-bold text-2xl">Have Queries ? 😋😉🤖👉 
           Let's get connected ! <a href="https://www.linkedin.com/in/jayasuriya-r/" >

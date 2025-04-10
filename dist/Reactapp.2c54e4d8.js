@@ -29442,7 +29442,7 @@ const RestaurantCard = (props)=>{
         className: "m-2 p-4 w-[280px] h-[350px] hover:bg-blue-50 hover:rounded-[10px] ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: " h-[170px] w-[260px] rounded-[10px] mb-2",
+                className: " h-[170px] w-[260px] rounded-[10px] mb-2 ",
                 alt: "briyani",
                 src: (0, _constants.CDN_URL) + cloudinaryImageId
             }, void 0, false, {
@@ -62387,7 +62387,7 @@ const Contact = ()=>{
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "bg-[#FCE9D7] border-2 border-black absolute w-11/12 h-10/12 ",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                     className: "p-8 mt-24 font-extrabold text-4xl",
                     children: "Contact us"
                 }, void 0, false, {
@@ -66798,10 +66798,10 @@ const RestaurantMenu = ({ resobj })=>{
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "m-auto bg-gray-50 border-gray-200 w-[50%] p-2 rounded-[10px] shadow-lg cursor-pointer",
+                className: "m-auto bg-gray-50 border-gray-200 w-[50%] p-2 rounded-[10px] shadow-lg cursor-pointer transition-all duration-300 ease-in-out ",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex justify-between bg-gray-200 rounded-lg px-2",
+                        className: "flex justify-between bg-gray-200 rounded-lg px-2 ",
                         onClick: handleClick,
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {

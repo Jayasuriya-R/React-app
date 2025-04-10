@@ -23,3 +23,5 @@ footer
 -slice
 -dispatch
 -selector
+
+Remove-Item -Recurse -Force .parcel-cache, dist
