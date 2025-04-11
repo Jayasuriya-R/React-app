@@ -12,3 +12,4 @@ test("should load contact componnet", ()=>{
     expect(heading).toBeInTheDocument();
 
 });
+

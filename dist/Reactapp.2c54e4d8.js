@@ -160,11 +160,11 @@
       });
     }
   }
-})({"frqA7":[function(require,module,exports,__globalThis) {
+})({"aWRqq":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 58215;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -67077,6 +67077,6 @@ exports.default = appStore;
 },{"@reduxjs/toolkit":"fKS5f","./cartSlice":"5m8Fi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"baeVm":[function(require,module,exports,__globalThis) {
 module.exports = import("./Grocery.390591cb.js").then(()=>module.bundle.root('cz4SJ'));
 
-},{"cz4SJ":"cz4SJ"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire68a4", {}, null, null, "http://localhost:1234")
+},{"cz4SJ":"cz4SJ"}]},["aWRqq","hh6uc"], "hh6uc", "parcelRequire68a4", {}, null, null, "http://localhost:58215")
 
 //# sourceMappingURL=Reactapp.2c54e4d8.js.map

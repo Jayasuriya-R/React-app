@@ -726,10 +726,6 @@
     justify-content: center;
   }
 
-  .overflow-hidden {
-    overflow: hidden;
-  }
-
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
