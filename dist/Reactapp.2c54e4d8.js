@@ -160,11 +160,11 @@
       });
     }
   }
-})({"aWRqq":[function(require,module,exports,__globalThis) {
+})({"frqA7":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 58215;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -27079,12 +27079,12 @@ const Body = ()=>{
         children: "Oops something went wrong it seems your offline..."
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 31,
+        lineNumber: 30,
         columnNumber: 12
     }, undefined);
     return values.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -27103,7 +27103,7 @@ const Body = ()=>{
                                 onChange: (e)=>setSearchTxt(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 39,
+                                lineNumber: 38,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27115,13 +27115,13 @@ const Body = ()=>{
                                 children: "search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 38,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27135,12 +27135,12 @@ const Body = ()=>{
                             children: "Top-Rated Restaurants"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 60,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27151,7 +27151,7 @@ const Body = ()=>{
                                 children: "UserName : "
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 75,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27161,19 +27161,19 @@ const Body = ()=>{
                                 onChange: (e)=>setUserName(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 76,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 74,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 37,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27184,29 +27184,29 @@ const Body = ()=>{
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 84,
+                            lineNumber: 83,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 86,
+                            lineNumber: 85,
                             columnNumber: 15
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 82,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 80,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 36,
+        lineNumber: 35,
         columnNumber: 5
     }, undefined);
 };
@@ -67077,6 +67077,6 @@ exports.default = appStore;
 },{"@reduxjs/toolkit":"fKS5f","./cartSlice":"5m8Fi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"baeVm":[function(require,module,exports,__globalThis) {
 module.exports = import("./Grocery.390591cb.js").then(()=>module.bundle.root('cz4SJ'));
 
-},{"cz4SJ":"cz4SJ"}]},["aWRqq","hh6uc"], "hh6uc", "parcelRequire68a4", {}, null, null, "http://localhost:58215")
+},{"cz4SJ":"cz4SJ"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire68a4", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Reactapp.2c54e4d8.js.map

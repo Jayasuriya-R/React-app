@@ -310,10 +310,6 @@
     position: static;
   }
 
-  .sticky {
-    position: sticky;
-  }
-
   .top-\[0\.25px\] {
     top: .25px;
   }

@@ -2,7 +2,6 @@ import { resObj } from "../Utilities/mockdata";
 import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useStatusCheck from "../Utilities/useStatusCheck.js";
 import useApiFetch from "../Utilities/useApiFetch.js";
