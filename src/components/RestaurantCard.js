@@ -7,7 +7,7 @@ import { CDN_URL } from "../Utilities/constants";
  const RestaurantCard = (props) => {
     const { name, cuisines, avgRating, cloudinaryImageId ,sla} = props.resData.card.card.info;
     return (
-      <div className="m-2 p-4 w-[280px] h-[350px] hover:bg-blue-50 hover:rounded-[10px] ">
+      <div data-testid="rescard" className="m-2 p-4 w-[280px] h-[350px] hover:bg-blue-50 hover:rounded-[10px] ">
         <img className=" h-[170px] w-[260px] rounded-[10px] mb-2 " alt="briyani" src={CDN_URL + cloudinaryImageId} />
         <h3 className="font-bold py-2">{name}</h3>
         <h4>{cuisines[0]}</h4>

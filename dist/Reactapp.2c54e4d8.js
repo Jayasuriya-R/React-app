@@ -27097,6 +27097,7 @@ const Body = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "search",
+                                TestId: "searchinput",
                                 className: "border-1 p-1 rounded-xs",
                                 placeholder: "Find your food",
                                 value: searchTxt,
@@ -27112,10 +27113,10 @@ const Body = ()=>{
                                     const searchData = values.filter((res)=>res.card.card.info.name.toLowerCase().includes(searchTxt));
                                     setFilteredValues(searchData);
                                 },
-                                children: "search"
+                                children: "Search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 46,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -27135,12 +27136,12 @@ const Body = ()=>{
                             children: "Top-Rated Restaurants"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 60,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 59,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27151,7 +27152,7 @@ const Body = ()=>{
                                 children: "UserName : "
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 74,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27161,13 +27162,13 @@ const Body = ()=>{
                                 onChange: (e)=>setUserName(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 75,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 73,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -27184,23 +27185,23 @@ const Body = ()=>{
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 83,
+                            lineNumber: 84,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 85,
+                            lineNumber: 86,
                             columnNumber: 15
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 81,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 79,
+                lineNumber: 80,
                 columnNumber: 7
             }, undefined)
         ]
@@ -29439,6 +29440,7 @@ var _mockdataDefault = parcelHelpers.interopDefault(_mockdata);
 const RestaurantCard = (props)=>{
     const { name, cuisines, avgRating, cloudinaryImageId, sla } = props.resData.card.card.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        "data-testid": "rescard",
         className: "m-2 p-4 w-[280px] h-[350px] hover:bg-blue-50 hover:rounded-[10px] ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
