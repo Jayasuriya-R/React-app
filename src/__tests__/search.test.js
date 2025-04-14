@@ -14,7 +14,9 @@ test('should should render body', async ()=>{
       </Provider>
       )
 
+      // Integration testing
 
+      // search button
       const searchbtn = await screen.findByRole("button", { name:'Search'});
 
       const searchinput = screen.getByPlaceholderText("Find your food")
@@ -26,4 +28,13 @@ test('should should render body', async ()=>{
       const rescard = screen.getAllByTestId("rescard");
 
       expect(rescard.length).toBe(3)
+
+     //Top rated restaurant button
+      const topbtn = await screen.findByRole("button", { name:'Top-Rated Restaurants'});  
+
+      fireEvent.click(topbtn);
+      
+      const rescard1 = screen.getAllByTestId("rescard");
+
+      expect(rescard1.length).toBe(2)
 })

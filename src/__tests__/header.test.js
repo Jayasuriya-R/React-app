@@ -5,6 +5,11 @@ import { Provider } from 'react-redux';
 import appStore from "../Utilities/appStore";
 import { BrowserRouter } from "react-router-dom";
 
+describe("should run all the test",() =>{
+
+  beforeAll(()=>{
+    console.log("before each")
+  })
 
 test("should load header component",()=>{
 
@@ -65,4 +70,6 @@ test("should click event component",()=>{
 
   //assert
   expect(btn1).toBeInTheDocument();
+})
+
 })
