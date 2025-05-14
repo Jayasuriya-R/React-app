@@ -45,7 +45,7 @@ const [showLoc, setShowLoc] = useState(false)
             <span>{showMenu? closeDropDown:dropDown }</span>
             </div>
             { showMenu && <ResMenuAccordian data={foodMenu}/>}
-            {console.log(foodMenu)}
+            
         </div>
         <div className="m-auto bg-gray-50 border-gray-200 w-[50%] p-2 rounded-[10px] shadow-lg cursor-pointer mt-4">
             <div className="flex justify-between bg-gray-200 rounded-lg px-2" onClick={handleLoc}>

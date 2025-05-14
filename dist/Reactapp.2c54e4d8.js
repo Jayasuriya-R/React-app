@@ -16294,7 +16294,13 @@ const Header = ()=>{
                             className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                children: "Home  |"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Home  |"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 35,
+                                    columnNumber: 51
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 35,
@@ -16309,7 +16315,13 @@ const Header = ()=>{
                             className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/about",
-                                children: "About us  |"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "About us  |"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 36,
+                                    columnNumber: 56
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 36,
@@ -16324,7 +16336,13 @@ const Header = ()=>{
                             className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/contact",
-                                children: "Contact us  |"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Contact us  |"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 37,
+                                    columnNumber: 58
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 37,
@@ -16339,7 +16357,13 @@ const Header = ()=>{
                             className: "px-2",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/grocery",
-                                children: "Grocery  |"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    children: "Grocery  |"
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 38,
+                                    columnNumber: 58
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 38,
@@ -27097,7 +27121,6 @@ const Body = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "search",
-                                TestId: "searchinput",
                                 className: "border-1 p-1 rounded-xs",
                                 placeholder: "Find your food",
                                 value: searchTxt,
@@ -27116,7 +27139,7 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -27136,12 +27159,12 @@ const Body = ()=>{
                             children: "Top-Rated Restaurants"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 61,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 60,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27152,7 +27175,7 @@ const Body = ()=>{
                                 children: "UserName : "
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 75,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -27162,13 +27185,13 @@ const Body = ()=>{
                                 onChange: (e)=>setUserName(e.target.value)
                             }, void 0, false, {
                                 fileName: "src/components/Body.js",
-                                lineNumber: 76,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 74,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -27185,23 +27208,23 @@ const Body = ()=>{
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 84,
+                            lineNumber: 83,
                             columnNumber: 15
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCardDefault.default), {
                             resData: restro
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 86,
+                            lineNumber: 85,
                             columnNumber: 15
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 82,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 80,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined)
         ]
@@ -66833,8 +66856,7 @@ const RestaurantMenu = ({ resobj })=>{
                         fileName: "src/components/RestaurantMenu.js",
                         lineNumber: 47,
                         columnNumber: 27
-                    }, undefined),
-                    console.log(foodMenu)
+                    }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",

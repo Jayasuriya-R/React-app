@@ -1,0 +1,2 @@
+var e=globalThis.parcelRequire68a4;(0,e.register)("loR3J",function(r,o){Object.defineProperty(r.exports,"__esModule",{value:!0,configurable:!0}),Object.defineProperty(r.exports,"default",{get:()=>a,set:void 0,enumerable:!0,configurable:!0});var t=e("ayMG0"),a=()=>(0,t.jsx)("div",{className:"flex justify-center",children:(0,t.jsx)("h1",{className:"mt-5 font-extrabold text-l font-serif shadow-2xl",children:"Soon you can order groceries here...!"})})});
+//# sourceMappingURL=Grocery.d0a4ecbb.js.map

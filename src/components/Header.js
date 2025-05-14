@@ -32,10 +32,10 @@ import { useSelector } from 'react-redux';
         <div className="flex items-center">
             
             <ul className='flex py-4 px-2 m-4'>
-                <li className='px-2'><Link to="/">Home  |</Link></li>
-                <li className='px-2'><Link to="/about">About us  |</Link></li>
-                <li className='px-2'><Link to="/contact">Contact us  |</Link></li>
-                <li className='px-2'><Link to="/grocery">Grocery  |</Link></li>
+                <li className='px-2'><Link to="/"><strong>Home  |</strong></Link></li>
+                <li className='px-2'><Link to="/about"><strong>About us  |</strong></Link></li>
+                <li className='px-2'><Link to="/contact"><strong>Contact us  |</strong></Link></li>
+                <li className='px-2'><Link to="/grocery"><strong>Grocery  |</strong></Link></li>
                 <li className='px-2 mt-0.5'><Link to="/cart"><span className='border-1 rounded-full w-16 h-16 mt-1 bg-amber-200 text-black p-2'>Cart - {cartItems.length} items</span></Link></li>
                 <button className='bg-gray-300 text-black px-2 pb-1 rounded-lg min-w-[75px] cursor-pointer' onClick={() =>{
                     setBtnlog(btnlog === "login"?"logout":"login")

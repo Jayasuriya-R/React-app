@@ -37,7 +37,6 @@ const Body = () => {
         <div className="search flex items-center ml-[65px]">
           <input
             type="search"
-            TestId="searchinput"
             className="border-1 p-1 rounded-xs"
             placeholder="Find your food"
             value={searchTxt}

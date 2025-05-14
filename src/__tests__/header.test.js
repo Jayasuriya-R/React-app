@@ -7,9 +7,9 @@ import { BrowserRouter } from "react-router-dom";
 
 describe("should run all the test",() =>{
 
-  beforeAll(()=>{
-    console.log("before each")
-  })
+  // beforeAll(()=>{
+  //   console.log("before each")
+  // })
 
 test("should load header component",()=>{
 
